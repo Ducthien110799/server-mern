@@ -12,7 +12,7 @@ app.use(cors())
 app.use(express.json())
 
 //database connection
-mongoose.connect("mongodb://localhost:27017/tutorialmern?readPreference=primary&appname=MongoDB%20Compass&ssl=false",
+mongoose.connect("mongodb+srv://ducthien:Ducthien13att.@mern.mo33i.mongodb.net/tutorialmern?retryWrites=true&w=majority",
     { useNewUrlParser: true });
 
 app.post('/add', async (req, res) => {
