@@ -48,7 +48,7 @@ app.put('/update', async (req, res) => {
             friendToUpdate.save()
         })
     } catch (error) {
-        console.log(error)
+
     }
 
     res.send('Updated !')
