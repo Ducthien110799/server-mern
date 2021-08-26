@@ -23,7 +23,6 @@ app.post('/add', async (req, res) => {
     const friend = new FriendModel({ name: name, age: age });
     await friend.save();
     res.send(friend)
-
 })
 
 app.get('/read', async (req, res) => {
